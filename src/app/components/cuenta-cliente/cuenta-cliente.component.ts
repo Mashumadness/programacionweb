@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import {UsuariosService} from '../../services/usuarios.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-cuenta-cliente',
@@ -40,7 +41,7 @@ ape: string;
     this.us.nombre = name
     let surname= this.modifform.controls["apeModif"].value        
     this.us.apellido = surname
-    alert("Contraseña modificada")
+    Swal.fire('Datos Modificados')
     this.router.navigate(['/home']);
   }
 

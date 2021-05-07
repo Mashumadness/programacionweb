@@ -1,10 +1,10 @@
 <app-navbar></app-navbar>
 <div class="row">
-    <div class="col-4">
+    <div class="col-3">
         <app-sidebar></app-sidebar>        
     </div>
     <div class="col-8">        
-        <h2>Modificar contraseña</h2>
+        <h2>Modificar datos</h2>
         <form [formGroup]="modifform" #formElement="ngForm" novalidate (ngSubmit)="modificar(modifform)">                       
             <div class="form-group">
                 <label for="nom">Nombre</label>

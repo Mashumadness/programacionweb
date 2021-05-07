@@ -1,0 +1,15 @@
+.btn-primary{
+    background-color: rgb(39, 39, 39);
+    margin-left: 100px;
+    }
+
+#formlogin{
+    margin-left: 450px;
+    width: 25%;
+}
+
+#logintitle{
+    margin-top: 20px;    
+    text-align: center;
+}
+

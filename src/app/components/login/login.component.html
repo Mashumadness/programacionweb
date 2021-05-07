@@ -1,6 +1,5 @@
-<h2>Login</h2>
-<form [formGroup]="loginform" #formElement="ngForm" novalidate (ngSubmit)="ingresar(formElement)">
-    
+<h2 id="logintitle">Login</h2>
+<form [formGroup]="loginform" #formElement="ngForm" novalidate (ngSubmit)="ingresar(formElement)" id="formlogin">    
     <div *ngIf="validMessage !=''">
         <h3 class="has-info">{{validMessage}}</h3>
     </div>

@@ -13,11 +13,9 @@ export class UsuariosService {
   constructor() { }
 
   login(username: string, password: string) : boolean{
-    if(this.user === username && this.password === password){
-      console.log("true");      
+    if(this.user === username && this.password === password){      
       return true;
-    }else{
-      console.log("false");
+    }else{      
       return false;
     } 
   }

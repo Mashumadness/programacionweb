@@ -1,9 +1,35 @@
 <app-navbar></app-navbar>
 <div class="row">
-    <div class="col-4">
+    <div class="col-3">
         <app-sidebar></app-sidebar>        
     </div>
     <div class="col-8">        
-       Acceder a los medios
+        <table class="table table-striped table-dark" id="tablaPasajeros">
+            <thead>
+                <tr>
+                    <th>Limite de tarifas</th>
+                </tr>
+              <tr>                 
+                <th scope="col">Pasajeros</th>
+                <th scope="col">Limite diario</th>
+                <th scope="col">Definicion diaria</th>
+                <th scope="col">Limite semanal</th>
+                <th scope="col">Definicion semanal</th>
+                <th scope="col">Limite mensual</th>
+                <th scope="col">Definicion mensual</th>
+              </tr>
+            </thead>
+            <tbody>                            
+                <tr *ngFor="let item of registrosOrdenados">                 
+                    <th scope="row" >Pasajero id {{item.id}}</th>
+                      <td>{{item.records[0].limite}}</td>
+                      <td>{{item.records[0].definicionDiaria}}</td>
+                      <td>{{item.records[1].limite}}</td>
+                      <td>{{item.records[1].definicionSemanal}}</td>  
+                      <td>{{item.records[2].limite}}</td>
+                      <td>{{item.records[2].definicionMensual}}</td>    
+                </tr>                   
+            </tbody>
+          </table>
     </div>
 </div>
